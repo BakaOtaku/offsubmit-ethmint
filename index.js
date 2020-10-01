@@ -24,21 +24,18 @@ async function newAccount() {
     }).then(function(receipt){
         console.log(receipt)
     });
+
+    console.log({publicKey: newAccount.address,privateKey: newAccount.privateKey.substring(2)})
+    return {publicKey: newAccount.address,privateKey: newAccount.privateKey.substring(2)}
 }
 
 async function submit (privateKey, courseAddress, filehash) {
-    // try {
     const provider = new HDWalletProvider(privateKey,"https://rpc-mumbai.matic.today/")
     web3=new Web3(provider)
     const accounts = await web3.eth.getAccounts()
 
     const courseContract = new web3.eth.Contract (CourseAbi,courseAddress)
-    await courseContract.methods.submit(filehash).send ({from: accounts[0]},(error,result)=> {console.log(result)})
-    
-    
-    // }
-    // catch(e) {}
-    console.log('hi there')
+    await courseContract.methods.submit(filehash).send ({from: accounts[0]},(error,result)=> {console.log(result)})    
     return "true"
 }
 
