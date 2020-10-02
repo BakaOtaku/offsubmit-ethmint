@@ -65,3 +65,5 @@ async function deployContract () {
 // submit("97d8cb40d55f97fa4a9dcbb9d89b159128b95043edfd835467553f3b5c69d7af","0x8FACefb6d5Ca1F2d7bCF88FbaAe1093bae733895","hi4")
 
 // ethermintcli keys unsafe-export-eth-key mykey 
+
+// 7552383524831970
