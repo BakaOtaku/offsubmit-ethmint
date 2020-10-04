@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+  background: #ebe6e6;
+  min-height: 100vh;
+}
+#wavy-header {
+  max-height: 12vmin;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.topleft {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  font-size: 18px;
+  color: #ebe6e6;
+}
+
+/* Text Box on Back Image */
+.container {
+  max-width: 1000px;
+  margin: 3.5rem auto 2rem auto;
+  /* margin: auto; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.text-box {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+  font-size: 62px;
+  line-height: 106%;
+  color: rgb(39, 51, 57);
+}
+
+.underline {
+  text-decoration-color: #e28090;
+}
+.underline::before {
+  height: 5px;
+  position: absolute;
+  background: #e28090;
+  content: "";
+  width: 45%;
+  bottom: -2px;
+  z-index: -1;
+}
+
+.page1-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0;
+}
+.page1-img {
+  max-width: 540px;
+  max-height: 300px;
+  /* width: 80%; */
+}
+.information {
+  flex: 1;
+  padding-left: 70px;
+  max-width: 500px;
+  font-weight: 700;
+}
+.info-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.info-all {
+  color: #000000b3;
+  max-width: 700px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 17px;
+}
+.sec-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0;
+}
+.sec {
+  align-content: center;
+  flex: 1;
+  padding: 0px 70px;
+  margin-left: -10px;
+}
+.form-wrapper {
+  /* max-width: 600px; */
+  width: 100%;
+  padding: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 0.5px 1px #555;
+}
+.custom-file-input {
+  align-content: center;
+  margin: auto;
+  padding: 20px;
+  top: 6px;
+  left: 0px;
+  font-size: 15px;
+  color: #a05c5c;
+  box-shadow: 1px 2px 3px #a05c5c;
+}
+.text-light {
+  font-weight: 400;
+  padding: 10px;
+  color: #00416d;
+}
+.exam-date {
+  max-width: 50%;
+}
+.create-course {
+  margin: 20px;
+  padding: 5px;
+  width: 100px;
+  color: #4d2828;
+  font-weight: 700;
+  background-color: #e28090;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .information {
+    padding: 0px;
+  }
+  .sec {
+    padding: 0px;
+  }
+  .custom-file-input {
+    margin: 0px;
+  }
+  .underline {
+    display: none;
+  }
+}
