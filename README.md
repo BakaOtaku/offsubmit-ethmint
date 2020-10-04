@@ -16,7 +16,7 @@
 
 ## How it solves:
 
-The teacher will get a wallet for creating an Ethereum (on **Ethmint**) smart contract for his course and upload his question paper which will then be AES-128 encrypted and stored on IPFS.
+The teacher will get a wallet for creating an Ethermint smart contract for his course and upload his question paper which will then be AES-128 encrypted and stored on IPFS.
 
 10 to 15 days before the exam, students will have to download the AES encrypted question papers of all exams collectively. Since now the student has sufficient time so there are no worries of slow internet speed.
 
