@@ -1,9 +1,10 @@
-<p align="center"><img src="https://user-images.githubusercontent.com/42104907/92333400-ccd37600-f0a2-11ea-96d8-08cb2b73a1a9.png" align="center" width="450"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/42104907/95023184-270f2900-0699-11eb-957d-123749327c14.png" align="center" width="450"></p>
 <a href=""><h1 align="center">Off Submit Ethermint</h1></a>
 <h4 align="center">Making online exams happen offline</h4>
 
 ## Links
 
+- [💻 Web App](https://offsubmit-ethmint.netlify.app/)
 - [📱 Mobile App](./app_1.0.2.apk)
 - [📹 Presentation Video](https://drive.google.com/file/d/18ilqagF6-qLHF-YP5sV5GT4aETjwYpJ9/view?usp=sharing)
 
