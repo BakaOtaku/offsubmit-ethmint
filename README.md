@@ -76,7 +76,7 @@ Set up custom RPC :
 		<ul>
 			<li>Node.js</li>
 			<li>Twilio SMS API</li>
-		  <li>Web3j</li>
+		  <li>Web3js</li>
 		</ul>
 </details>
 
