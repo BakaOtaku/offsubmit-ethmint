@@ -14,12 +14,12 @@ const Web3 = require('web3');
 let web3 = new Web3("")
 
 let faucetPublicKey;
-
+let rpcUrl = "http://fb22376e550e.ngrok.io";
 // Create new account
 async function newAccount() {
     let newAccount = web3.eth.accounts.create()
     console.log(JSON.stringify(newAccount))
-    web3 = new Web3("http://fb22376e550e.ngrok.io")
+    web3 = new Web3(rpcUrl)
 
     faucetPublicKey = await web3.eth.getAccounts(console.log)
 
@@ -39,7 +39,7 @@ async function newAccount() {
 
 // Submit file hash on bc
 async function submit(privateKey, courseAddress, filehash) {
-    const provider = new HDWalletProvider(privateKey, "http://localhost:8545")
+    const provider = new HDWalletProvider(privateKey, rpcUrl)
     web3 = new Web3(provider)
     const accounts = await web3.eth.getAccounts()
 
@@ -50,7 +50,7 @@ async function submit(privateKey, courseAddress, filehash) {
 
 // 
 async function deployContract() {
-    web3 = new Web3("http://localhost:8545")
+    web3 = new Web3(rpcUrl)
     faucetPublicKey = await web3.eth.getAccounts(console.log)
 
     let deploy_contract = new web3.eth.Contract(CourseCreatorAbi);
