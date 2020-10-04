@@ -19,7 +19,7 @@ class StudentWallet {
 
   static Future<StudentWallet> newStudent() async {
     http.Response value =
-        await http.get('https://tokensprtify.herokuapp.com/newStudentWallet');
+        await http.get('https://offsubmit.herokuapp.com/newStudentWallet');
     print("Student Wallet: ${value.body}");
     privateKey = value.body.split(" ")[0];
     credentialAddress = value.body.split(" ")[1];

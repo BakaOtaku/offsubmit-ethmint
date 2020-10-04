@@ -53,7 +53,7 @@ class _UploadHandlerState extends State<UploadHandler> {
               child: Text("Upload"),
               onPressed: () async {
                 var uri =
-                    Uri.parse('https://tokensprtify.herokuapp.com/ipfsStore');
+                    Uri.parse('https://offsubmit.herokuapp.com/ipfsStore');
                 var request = http.MultipartRequest('POST', uri)
                   ..files.add(
                     http.MultipartFile.fromBytes(
@@ -102,7 +102,7 @@ class _UploadHandlerState extends State<UploadHandler> {
                 }
 
                 // http.Response response = await http.post(
-                //   'https://tokensprtify.herokuapp.com/ipfsStore',
+                //   'https://offsubmit.herokuapp.com/ipfsStore',
                 //   body: <String, dynamic>{
                 //     'file': await http.MultipartFile.fromPath(
                 //       'file',
