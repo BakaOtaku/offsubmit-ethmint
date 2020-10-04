@@ -69,7 +69,7 @@ class _UploadHandlerState extends State<UploadHandler> {
                 print("Result response2: ${response2.statusCode}");
                 print("Body response2: ${response2.body}");
                 // return response2.body;
-                if (response2.statusCode == 200) {
+                if (response2.statusCode == 201) {
                   print('Uploaded!');
                   setState(() {
                     ipfshash = response2.body;
