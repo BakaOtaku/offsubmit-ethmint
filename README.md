@@ -57,12 +57,16 @@ Set up custom RPC :
 
 `curl -XGET 'https://offsubmit.herokuapp.com/reqEther/<your public key here>'`
 
+## Deployed Contract
+
+<p align="center"><img src="./contract_deployed.png" align="center" width="450"></p>
+
 ## Tech Stack
 
 <details>
 	<summary>Blockchain</summary>
 		<ul>
-			<li>Ethereum + Ethermint</li>
+			<li>Ethermint</li>
 		  <li>Solidity</li>
 		</ul>
 </details>
