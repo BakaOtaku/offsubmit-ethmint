@@ -35,6 +35,10 @@ This will check that student has not tampered with the file after the deadline o
 
 Now the professor can download the answer sheets and do the evaluation.
 
+## Difficulties faced
+
+Since we didn't have sufficient AWS/GCP credits for ethermint to be deployed online so we had to establish ssh connection from localhost by exposing IP to webapp deployed to connect webapp to ethermint
+
 ## Setting up locally
 
 - Setting up ethermint [Download ethermint](https://github.com/ChainSafe/ethermint/archive/v0.1.0.zip) v0.1.0 release
